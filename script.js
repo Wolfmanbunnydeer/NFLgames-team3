@@ -17,7 +17,8 @@ function myFunction() {
       Hometeam: "Cardinals",
       Homepoint: "78",
       AwayPoint: "45",
-
+   }
+{
       City: "Atlanta",
       Name: "Falcons",
       Date: "March 7",
@@ -25,7 +26,8 @@ function myFunction() {
       Hometeam: "Falcons",
       Homepoint: "23",
       AwayPoint: "8",
-
+   }
+{
       City: "N/S Carolinas",
       Name: "Carolina Panther",
       Date: "March 7",
@@ -33,7 +35,8 @@ function myFunction() {
       Hometeam: "Panther",
       Homepoint: "45",
       AwayPoint: "8",
-
+   }
+{
       City: "Chicago",
       Name: "Chicago Bears",
       Date: "March 7",
@@ -41,7 +44,8 @@ function myFunction() {
       Hometeam: "Chicago Bears",
       Homepoint: "78",
       AwayPoint: "8",
-
+   }
+{
       City: "Dallas",
       Name: "Dallas Cowboys",
       Date: "March 7",
@@ -49,7 +53,8 @@ function myFunction() {
       Hometeam: "Dallas Cowboys",
       Homepoint: "90",
       AwayPoint: "87",
-
+   }
+{
       City: "Detroits",
       Name: "Detroit Lions",
       Date: "March 7",
@@ -57,7 +62,8 @@ function myFunction() {
       Hometeam: "Detroit Lions",
       Homepoint: "90",
       AwayPoint: "87",
-
+   }
+{
       City: "Jacksonville",
       Name: "Jacksonville Jaguars",
       Date: "March 7",
@@ -65,7 +71,8 @@ function myFunction() {
       Hometeam: "Jacksonville Jaguars",
       Homepoint: "90",
       AwayPoint: "87",
-
+   }
+{
       City: "GreenBay",
       Name: "Green Bay Packers",
       Date: "March 7",
@@ -81,7 +88,8 @@ function myFunction() {
       Hometeam: " Los Angeles Rams",
       Homepoint: "90",
       AwayPoint: "87",
-
+   }
+{
       City: " Los Angeles",
       Name: " Los Angeles Rams",
       Date: "March 7",
@@ -90,7 +98,8 @@ function myFunction() {
       Homepoint: "90",
       AwayPoint: "87",
       imgurl: "https://i.postimg.cc/v4b42jMh/TEN.jpg",
-
+   }
+{
       City: "Minnesota",
       Name: "Minnesota Vikings",
       Date: "March 7",
@@ -98,7 +107,8 @@ function myFunction() {
       Hometeam: "Minnesota",
       Homepoint: "90",
       AwayPoint: "87",
-
+   }
+{
       City: "New Orleans",
       Name: "New Orleans Saints",
       Date: "March 7",
@@ -107,7 +117,8 @@ function myFunction() {
       Homepoint: "90",
       AwayPoint: "87",
       imgurl: "https://i.postimg.cc/v4b42jMh/TEN.jpg",
-
+   }
+{
       City: "New York",
       Name: "New York Giants",
       Date: "March 7",
@@ -115,7 +126,8 @@ function myFunction() {
       Hometeam: "New York Giants",
       Homepoint: "90",
       AwayPoint: "87",
-
+    }
+{
       City: "Denver",
       Name: "Denver Broncos",
       Date: "March 7",
@@ -124,7 +136,8 @@ function myFunction() {
       Homepoint: "90",
       AwayPoint: "87",
       imgurl: "https://i.postimg.cc/v4b42jMh/TEN.jpg",
-
+    }
+{
       City: "Houston ",
       Name: "Houston Texan",
       Date: "March 7",
@@ -133,7 +146,8 @@ function myFunction() {
       Homepoint: "90",
       AwayPoint: "87",
       imgurl: "https://i.postimg.cc/v4b42jMh/TEN.jpg",
-
+    }
+{
       City: "Miami ",
       Name: " Miami Dolphins ",
       Date: "March 7",
@@ -141,7 +155,8 @@ function myFunction() {
       Hometeam: " Miami Dolphins ",
       Homepoint: "90",
       AwayPoint: "87",
-
+    }
+{
       City: "Tennessee",
       Name: " Tennessee Titans",
       Date: "March 7",
@@ -150,7 +165,8 @@ function myFunction() {
       Homepoint: "90",
       AwayPoint: "87",
       imgurl: "https://i.postimg.cc/v4b42jMh/TEN.jpg",
-
+    }
+{
       City: "Buffalo",
       Name: " Buffalo Bills",
       Date: "March 7",
@@ -169,6 +185,7 @@ function myFunction() {
     text += NFL[i] + "<br>";
   }
   myGames = myGames + "";
+}
   NFL.Name = NFL.Name + "";
   NFL.Date = NFL.Date + "";
   NFL.City = NFL.City + "";
@@ -179,7 +196,7 @@ function myFunction() {
 
   //Insert data for create Element fopr flexbox.
   document.getElementById("gamesOutput").innerHTML =
-    "<br>myGames" +
+    "myGames" +
     myGames +
     "" +
     "<br>Name: " +
