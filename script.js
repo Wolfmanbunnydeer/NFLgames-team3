@@ -187,38 +187,6 @@ nflTeams.forEach((team) => {
     teamOption.value = team.name;
     teamSelectOptions.appendChild(teamOption);
 })
-
-// Populating Team Cards
-const container = document.getElementById("flex-container");
-nflTeams.forEach((team) => {
-    const teamCard = document.createElement('div');
-    teamCard.id = `team-${team.name}`;
-    teamCard.classList.add('nfl-team-card');
-
-    const teamName = document.createElement('h2');
-    teamName.textContent = team.name;
-    teamName.style.backgroundImage = `linear-gradient(to right, ${team.cPrim} , ${team.cSecn})`;
-
-    const teamLocation = document.createElement('p');
-    teamLocation.classList.add('nfl-team-location');
-    teamLocation.textContent = `LOCATION: ${team.city.toUpperCase()}`;
-
-
-    const wins = document.createElement('p');
-    wins.id = `Name-${team.name}`
-    wins.textContent = `wins: ${team.wins}`;
-
-    const ties = document.createElement('p');
-    ties.id = `TIES-${team.name}`
-    ties.textContent = `TIES: ${team.ties}`;
-
-    const losses = document.createElement('p');
-    losses.id = `LOSSES-${team.name}`
-    losses.textContent = `LOSSES: ${team.losses}`;
-
-    //Appending to stats
-    statsContainer.append(Names, city, HomePoint, Hometeam, Awayteam, AwayPoint);
-
     //Img container
     const imageContainer = document.createElement('div');
     imageContainer.classList.add('flex-container');
@@ -230,7 +198,7 @@ nflTeams.forEach((team) => {
     teamCard.append(
         teamName,
         teamLocation,
-        imageContainer
+        flex-container,
     );
 
     // Appending team card to container
@@ -245,37 +213,47 @@ nflTeams.forEach((team) => {
   }
   myGames = myGames + "";
 }
- Name = Name + "";
-  Date = Date + "";
-  City = City + "";
- Hometeam = Hometeam + "";
- HomeAway = HomeAway + "";
-  Awayteam = Awayteam + "";
-  AwayPoint = AwayPoint + "";
+  myGames = myGames + "<br>";
+}
+ NFL.Name = NFL.Name + "";
+  NFL.Date = NFL.Date + "";
+  NFL.City = NFL.City + "";
+ NFL.Hometeam =  NFL.Hometeam+ "";
+ NFL.HomeAway = NFL.HomeAway + "";
+  NFL.Awayteam = NFL.Awayteam + "";
+  NFL.AwayPoint = NFL.AwayPoint + "";
+}
+ NFL.Name = NFL.Name + "<br>";
+  NFL.Date = NFL.Date + "<br>";
+  NFL.City = NFL.City + "<br>";
+ NFL.Hometeam =  NFL.Hometeam+ "<br>";
+ NFL.HomeAway = NFL.HomeAway + "<br>";
+  NFL.Awayteam = NFL.Awayteam + "<br>";
+  NFL.AwayPoint = NFL.AwayPoint + "<br>";
 
   //Insert data for create Element fopr flexbox.
   document.getElementById("gamesOutput").innerHTML =
-    "myGames" +
+    "myGames is" +
     myGames +
     "" +
     "<br>Name: " +
-    Name +
+    NFL.Name +
     " " +
     "<br>City: " +
-    City +
+    NFL.City +
     " " +
     "<br>Date: " +
-    Hometeam +
+    NFL.Hometeam +
     " " +
     "<br>Hometeam:" +
-   Homepoint +
+   NFL.Homepoint +
     " " +
     "<br>Homepoint:" +
-    Awayteam +
+    NFL.Awayteam +
     " " +
     "<br>Awayteam:" +
     " " +
-    AwayPoint +
+    NFL.AwayPoint +
     "<br>AwayPoint:" +
     "  " +
     ".";
