@@ -185,6 +185,7 @@ function myFunction() {
     text += NFL[i] + "<br>";
   }
   myGames = myGames + "";
+}
  Name = Name + "";
   Date = Date + "";
   City = City + "";
