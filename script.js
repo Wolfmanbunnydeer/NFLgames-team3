@@ -178,7 +178,13 @@ function myFunction() {
       imgurl: "https://i.postimg.cc/3drD1NhN/BUF.jpg",
     },
   ]);
+  let txt = "";
+numbers.forEach(myFunction);
+document.getElementById("demo").innerHTML = txt;
   
+  function myFunction(value, index, array) {
+  txt += value + "<br>"; 
+}
   // Populating Team Select Options
 const teamSelectOptions = document.getElementById('Add game');
 nflTeams.forEach((team) => {
