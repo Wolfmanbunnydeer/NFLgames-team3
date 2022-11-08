@@ -198,6 +198,10 @@ nflTeams.forEach((team) => {
     teamCard.append(
         teamName,
         teamLocation,
+        teamHometeam,
+        teamAwayteam,
+        teamHomepoint,
+        teamAwayteam
         flex-container,
     );
 
