@@ -56,8 +56,7 @@ function myFunction() {
       Hometeam: "Detroit Lions",
       Homepoint: "90",
       AwayPoint: "87",
-   }
-{
+
       City: "Jacksonville",
       Name: "Jacksonville Jaguars",
       Date: "March 7",
@@ -167,7 +166,6 @@ function myFunction() {
     text += NFL[i] + "<br>";
   }
   myGames = myGames + "";
-}
  Name = Name + "";
   Date = Date + "";
   City = City + "";
