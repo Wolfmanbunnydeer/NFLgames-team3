@@ -5,7 +5,7 @@ document.getElementById("addGameButton").addEventListener("click", myFunction);
 function myFunction() {
   let myGames = document.getElementById("games").value;
 
-  // var NFL = document.createElement('NFL').value
+  // var NFL = document.createElement('NFL').innerHTML
   var NFL = document.createElement("addGamesButton");
   NFL.innerHTML = ([
     {
@@ -200,23 +200,23 @@ function myFunction() {
     myGames +
     "" +
     "<br>Name: " +
-    NFL.Name +
+    Name +
     " " +
     "<br>City: " +
-    NFL.City +
+    City +
     " " +
     "<br>Date: " +
-    NFL.Hometeam +
+    Hometeam +
     " " +
     "<br>Hometeam:" +
-    NFL.Homepoint +
+   Homepoint +
     " " +
     "<br>Homepoint:" +
-    NFL.Awayteam +
+    Awayteam +
     " " +
     "<br>Awayteam:" +
     " " +
-    NFL.AwayPoint +
+    AwayPoint +
     "<br>AwayPoint:" +
     "  " +
     ".";
