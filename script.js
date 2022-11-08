@@ -2,10 +2,10 @@
 
 document.getElementById("addGameButton").addEventListener("click", myFunction);
 
-function AddGame() {
+function myFunction() {
   let myGames = document.getElementById("games").value;
 
-  // var NFL = document.createElement('NFL')
+  // var NFL = document.createElement('NFL').value
   var NFL = document.createElement("addGamesButton");
   NFL.innerHTML = [
     {
@@ -88,6 +88,7 @@ function AddGame() {
       Hometeam: " Los Angeles Rams",
       Homepoint: "90",
       AwayPoint: "87",
+      imgurl: "https://i.postimg.cc/v4b42jMh/TEN.jpg",
 
       City: "Minnesota",
       Name: "Minnesota Vikings",
@@ -104,6 +105,7 @@ function AddGame() {
       Hometeam: "New Orleans Saints",
       Homepoint: "90",
       AwayPoint: "87",
+      imgurl: "https://i.postimg.cc/v4b42jMh/TEN.jpg",
 
       City: "New York",
       Name: "New York Giants",
@@ -120,6 +122,7 @@ function AddGame() {
       Hometeam: "Denver Broncos",
       Homepoint: "90",
       AwayPoint: "87",
+      imgurl: "https://i.postimg.cc/v4b42jMh/TEN.jpg",
 
       City: "Houston ",
       Name: "Houston Texan",
@@ -128,6 +131,7 @@ function AddGame() {
       Hometeam: "Houston Texan",
       Homepoint: "90",
       AwayPoint: "87",
+      imgurl: "https://i.postimg.cc/v4b42jMh/TEN.jpg",
 
       City: "Miami ",
       Name: " Miami Dolphins ",
@@ -144,6 +148,7 @@ function AddGame() {
       Hometeam: " Tennessee Titans",
       Homepoint: "90",
       AwayPoint: "87",
+      imgurl: "https://i.postimg.cc/v4b42jMh/TEN.jpg",
 
       City: "Buffalo",
       Name: " Buffalo Bills",
@@ -151,31 +156,49 @@ function AddGame() {
       AwayTeam: "Miami Dolphins",
       Hometeam: "Buffalo Bills",
       Homepoint: "90",
-      AwayPoint: "87"
+      AwayPoint: "87",
+      imgurl: "https://i.postimg.cc/3drD1NhN/BUF.jpg"
     }
   ];
-  let fLen = NFL.length;
-  let text = "<li>";
-  for (let i = 0; i < NFL.length; i++) {
+  let txt = "";
+  document.getElementById("demo").innerHTML = txt;
+  let text = "<div>flex container";
+  for (let i = 20; i < NFL.length; i++) {
     text += NFL[i] + "<br>";
-    for (var key in NFL) {
-      console.log(key + " <li> " + NFL[key]);
-    }
-    function myFunction(value, index, array) {
-      let myGames = (txt += value + "<br>");
-    }
-    document.getElementById("gamesOutput").innerHTML =
-      "my Game is" + myGames + ".<br>";
-
-    // Create an "li" node:
-    const node = document.createElement("li");
-
-    // p.textContent =  ["result"];
-    textnode.appendChild(NFL);
-    let li = document.createElement("li");
-    li.innerHTML = "games is " + myGames + ".<br>";
-
-    console.log(document.location);
-    // Prints a Location object to the console
   }
+  myGames = myGames + "";
+  NFL.Name = NFL.Name + "";
+  NFL.Date = NFL.Date + "";
+  NFL.City = NFL.City + "";
+  NFL.Hometeam = NFL.Hometeam + "";
+  NFL.HomeAway = NFL.HomeAway + "";
+  NFL.Awayteam = NFL.Awayteam + "";
+  NFL.AwayPoint = NFL.AwayPoint + "";
+
+  //Insert data for create Element fopr flexbox.
+  document.getElementById("gamesOutput").innerHTML =
+    "<br>myGames" +
+    myGames +
+    "" +
+    "<br>Name: " +
+    NFL.Name +
+    " " +
+    "<br>City: " +
+    NFL.City +
+    " " +
+    "<br>Date: " +
+    NFL.Hometeam +
+    " " +
+    "<br>Hometeam:" +
+    NFL.Homepoint +
+    " " +
+    "<br>Homepoint:" +
+    NFL.Awayteam +
+    " " +
+    "<br>Awayteam:" +
+    " " +
+    NFL.AwayPoint +
+    "<br>AwayPoint:" +
+    "  " +
+    ".";
 }
