@@ -2,7 +2,7 @@
 
 document.getElementById("addGameButton").addEventListener("click", myFunction);
 
-function myFunction() {
+function AddGame() {
   let myGames = document.getElementById("games").value;
 
   // var NFL = document.createElement('NFL')
