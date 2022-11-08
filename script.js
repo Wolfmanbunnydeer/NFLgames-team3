@@ -178,6 +178,65 @@ function myFunction() {
       imgurl: "https://i.postimg.cc/3drD1NhN/BUF.jpg",
     },
   ]);
+  
+  // Populating Team Select Options
+const teamSelectOptions = document.getElementById('Add game');
+nflTeams.forEach((team) => {
+    const teamOption = document.createElement('option');
+    teamOption.textContent = team.name;
+    teamOption.value = team.name;
+    teamSelectOptions.appendChild(teamOption);
+})
+
+// Populating Team Cards
+const container = document.getElementById("flex-container");
+nflTeams.forEach((team) => {
+    const teamCard = document.createElement('div');
+    teamCard.id = `team-${team.name}`;
+    teamCard.classList.add('nfl-team-card');
+
+    const teamName = document.createElement('h2');
+    teamName.textContent = team.name;
+    teamName.style.backgroundImage = `linear-gradient(to right, ${team.cPrim} , ${team.cSecn})`;
+
+    const teamLocation = document.createElement('p');
+    teamLocation.classList.add('nfl-team-location');
+    teamLocation.textContent = `LOCATION: ${team.city.toUpperCase()}`;
+
+
+    const wins = document.createElement('p');
+    wins.id = `Name-${team.name}`
+    wins.textContent = `wins: ${team.wins}`;
+
+    const ties = document.createElement('p');
+    ties.id = `TIES-${team.name}`
+    ties.textContent = `TIES: ${team.ties}`;
+
+    const losses = document.createElement('p');
+    losses.id = `LOSSES-${team.name}`
+    losses.textContent = `LOSSES: ${team.losses}`;
+
+    //Appending to stats
+    statsContainer.append(Names, city, HomePoint, Hometeam, Awayteam, AwayPoint);
+
+    //Img container
+    const imageContainer = document.createElement('div');
+    imageContainer.classList.add('flex-container');
+    const img = document.createElement('img');
+    img.src = team.imgurl;
+    imageContainer.appendChild(img);
+    
+    // Appending all elements to card element
+    teamCard.append(
+        teamName,
+        teamLocation,
+        imageContainer
+    );
+
+    // Appending team card to container
+    container.appendChild(teamCard);
+});  
+  
   let txt = "";
   document.getElementById("demo").innerHTML = txt;
   let text = "<div>flex container";
