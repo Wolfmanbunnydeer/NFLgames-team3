@@ -7,8 +7,9 @@ function myFunction() {
 
   // var NFL = document.createElement('NFL').value
   var NFL = document.createElement("addGamesButton");
-  NFL.innerHTML = [
+  NFL.innerHTML = ([
     {
+    }
       City: "Arizona",
       Name: "Arizona Cardinal",
       Date: "March 7",
@@ -159,7 +160,8 @@ function myFunction() {
       AwayPoint: "87",
       imgurl: "https://i.postimg.cc/3drD1NhN/BUF.jpg"
     }
-  ];
+{
+  ]);
   let txt = "";
   document.getElementById("demo").innerHTML = txt;
   let text = "<div>flex container";
