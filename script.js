@@ -8,8 +8,7 @@ function myFunction() {
   // var NFL = document.createElement('NFL').innerHTML
   var NFL = document.createElement("addGamesButton");
   NFL.innerHTML = ([
-    {
-    }
+    
       City: "Arizona",
       Name: "Arizona Cardinal",
       Date: "March 7",
@@ -174,9 +173,7 @@ function myFunction() {
       Hometeam: "Buffalo Bills",
       Homepoint: "90",
       AwayPoint: "87",
-      imgurl: "https://i.postimg.cc/3drD1NhN/BUF.jpg"
-    }
-{
+      imgurl: "https://i.postimg.cc/3drD1NhN/BUF.jpg",
   ]);
   let txt = "";
   document.getElementById("demo").innerHTML = txt;
@@ -186,13 +183,13 @@ function myFunction() {
   }
   myGames = myGames + "";
 }
-  NFL.Name = NFL.Name + "";
-  NFL.Date = NFL.Date + "";
-  NFL.City = NFL.City + "";
-  NFL.Hometeam = NFL.Hometeam + "";
-  NFL.HomeAway = NFL.HomeAway + "";
-  NFL.Awayteam = NFL.Awayteam + "";
-  NFL.AwayPoint = NFL.AwayPoint + "";
+ Name = Name + "";
+  Date = Date + "";
+  City = City + "";
+ Hometeam = Hometeam + "";
+ HomeAway = HomeAway + "";
+  Awayteam = Awayteam + "";
+  AwayPoint = AwayPoint + "";
 
   //Insert data for create Element fopr flexbox.
   document.getElementById("gamesOutput").innerHTML =
