@@ -236,7 +236,7 @@ document.getElementById("Game");
       console.log("Element:" + el + " removed")
       input.focus();
     }
-function newDoc() {
+function AddGame()() {
   window.location.assign("https://wolfmanbunnydeer.github.io/NFLgameteam/")
 }
  
