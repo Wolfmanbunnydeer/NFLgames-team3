@@ -236,5 +236,7 @@ document.getElementById("Game");
       console.log("Element:" + el + " removed")
       input.focus();
     }
-
+function newDoc() {
+  window.location.assign("https://www.w3schools.com")
+}
  
