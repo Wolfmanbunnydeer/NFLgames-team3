@@ -237,6 +237,6 @@ document.getElementById("Game");
       input.focus();
     }
 function newDoc() {
-  window.location.assign("https://www.w3schools.com")
+  window.location.assign("https://wolfmanbunnydeer.github.io/NFLgameteam/")
 }
  
